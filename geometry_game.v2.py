@@ -4,7 +4,7 @@ import turtle
 
 class Point:
 
-    def __init__(self, x, y):
+    def __init__(self, x:float, y:float):
         self.x = x
         self.y = y
 
@@ -25,7 +25,7 @@ class Rectangle:
         self.point2 = point2
 
     def area(self):
-        return self.point2.x - self.point1.x * self.point2.y - self.point2.y
+        return self.point2.x - self.point1.x * self.point2.y - self.point1.y
 
 
 class GuiRectangle(Rectangle):  # GuiRectangle inherits from Rectangle class
